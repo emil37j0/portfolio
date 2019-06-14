@@ -1,0 +1,296 @@
+/***GENERALLE INDSTILLINGER***/
+
+* {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+
+section,
+footer {
+    /*    max-width: 1200px;*/
+    margin: 0 auto;
+}
+
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #dfc3f8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #dfc3f8;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font: 1.2rem;
+    line-height: 2;
+    color: dimgray;
+
+}
+
+/***GENERELLE INDSTILLINGER SLUT***/
+
+
+/***MENU***/
+
+/* unvisited link */
+header nav a:link {
+    color: #a584c4;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #a584c4;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #fbfbfb;
+    background-color: #a584c4;
+}
+
+/* selected link */
+header nav a:active {
+    color: #a584c4;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    /*    font-weight: lighter;*/
+    margin: 0.25rem 0 0 0;
+    padding: 0 1rem 0;
+    text-decoration: underline;
+
+
+}
+
+@media only screen and (min-width:1095px) {
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0.3rem;
+
+    }
+
+    header nav a {
+        margin: 0 0.5rem;
+        padding: 0 1.1rem 0 0;
+        border-right: 1px solid #8964ab;
+        text-decoration: none;
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+        padding: 0;
+    }
+
+
+}
+
+
+/***MENU SLUT***/
+
+/*****FORSIDE*****/
+
+#forside {
+    background-image: url(billeder/splashbillede4.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 71% 0;
+    max-width: none;
+
+}
+
+/*****FORSIDE SLUT******/
+
+
+/***OM***/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+
+}
+
+.col_mig {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+}
+
+#om .col {
+    border: 2px solid #dfc3f8;
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+}
+
+/***OM SLUT***/
+
+/***PORTFOLIO SITE***/
+
+#portfolio {
+    display: grid;
+    padding: 0 0;
+    justify-items: center;
+    width: 100vw;
+
+}
+
+#portfolio .tema {
+    width: 90%;
+    position: relative;
+    margin: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: 0.5s;
+}
+
+#portfolio .tema:hover {
+    transform: scale(1.1);
+}
+
+
+.tema img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#portfolio .tekst {
+    position: absolute;
+    z-index: 2;
+    width: 95.5%;
+    bottom: 0%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    background-color: #332144;
+    text-align: center;
+
+}
+
+
+/***PORTFOLIO SITE SLUT***/
+
+
+
+@media only screen and (min-width:1200px) {
+    #om .overskrift {
+        margin-left: 20rem;
+        margin-right: 20rem;
+        margin-top: 0;
+        position: absolute;
+        flex-basis: 700px;
+        flex-grow: 1;
+    }
+
+    #om .col_mig {
+        width: 100%;
+        margin-right: 17rem;
+        margin-top: 20rem;
+
+    }
+
+    #om .col {
+        width: 100%;
+        margin-left: 17rem;
+        margin-top: 20rem;
+        background-color: rgba(251, 251, 251, 0.25);
+        border-radius: 10%;
+
+    }
+
+
+    #om {
+        background-image: url(billeder/bagtekst2.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    #om p {
+        color: #332144;
+        /*        font-weight: bold;*/
+    }
+
+    #om h1,
+    h2 {
+        color: #332144;
+        text-decoration: none;
+    }
+
+    #om .col_mig img {
+        width: 27vw;
+        border-radius: 10%;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: none;
+    }
+
+    #portfolio .overskrift {
+        grid-column: 1/4;
+        margin-left: 10rem;
+        margin-right: 10rem;
+
+    }
+
+    #portfolio .tema {
+        width: 100%;
+        padding: 1.7rem;
+
+    }
+
+    #portfolio .tekst {
+        width: 88.7%;
+    }
+
+
+}
