@@ -48,7 +48,6 @@ h3 {
     font-size: 1rem;
 }
 
-
 p {
     font-family: 'Montserrat', sans-serif;
     font: 1rem;
@@ -70,6 +69,7 @@ a {
     color: #c7a7e3;
     font-weight: bold;
 }
+
 
 /***GENERELLE INDSTILLINGER SLUT***/
 
@@ -263,7 +263,7 @@ header nav a {
     padding: 1rem;
 }
 
-#web .col_img:hover {
+#web .dadaisme:hover {
     transform: scale(1.1);
 }
 
@@ -293,8 +293,179 @@ header nav a {
 
 /***WEB SLUT***/
 
+/***INDHOLD***/
 
 
+#indhold .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+
+}
+
+#indhold .overskrift {
+    margin-top: 2rem;
+}
+
+#indhold .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+}
+
+#indhold .col_1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+}
+
+#indhold .redesign:hover {
+    transform: scale(1.1);
+}
+
+#indhold .redesign {
+    width: 90%;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.8rem;
+}
+
+#indhold .tekst {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    bottom: 25.5%;
+    right: 25.5%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    background-color: #332144;
+    text-align: center;
+    opacity: 1;
+
+}
+
+#indhold .center {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+video {
+    width: 100%;
+}
+
+.video {
+    flex-basis: 900px;
+    flex-grow: 1;
+}
+
+h3.center {
+    text-align: center;
+}
+
+/***INDHOLD SLUT***/
+
+/***UX***/
+
+
+#ux .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+
+}
+
+#ux .col_img {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 0.2rem;
+    padding: 1rem;
+}
+
+#ux .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2.4rem;
+    padding: 1rem;
+}
+
+
+#ux .projects:hover {
+    transform: scale(1.1);
+}
+
+#ux .projects {
+    width: 90%;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.8rem;
+}
+
+#ux .tekst {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    bottom: 10%;
+    left: 10%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    background-color: #332144;
+    text-align: center;
+    opacity: 1;
+
+}
+
+
+/***UX SLUT***/
+
+/***FOOTER****/
+
+footer {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    background-color: rgba(165, 132, 196, 0.8);
+    color: #fbfbfb;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    line-height: 1.5;
+}
+
+/***FOOTER SLUT****/
+
+@media only screen and (min-width:700px) {
+    #web .col {
+        flex-basis: 500px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #web .col_img {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #ux .col {
+        flex-basis: 500px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #ux .col_img {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
 
 
 @media only screen and (min-width:1200px) {
@@ -391,15 +562,80 @@ header nav a {
 
     #web .col_img {
         width: 100%;
-        margin-right: 1rem;
+        margin-right: 2rem;
         margin-top: 18rem;
+        flex-basis: 300px;
 
     }
 
     #web .col {
         width: 100%;
-        margin-left: 5rem;
+        margin-left: 8rem;
         margin-top: 15rem;
+        flex-basis: 300px;
+    }
 
+
+
+    #indhold .overskrift {
+        margin-left: 20rem;
+        margin-right: 20rem;
+        margin-top: 0;
+        position: absolute;
+        flex-basis: 700px;
+        flex-grow: 1;
+    }
+
+    #indhold .col_img {
+        width: 100%;
 
     }
+
+    #indhold .col {
+        width: 100%;
+        margin-top: 15rem;
+        margin-left: 15rem;
+        flex-basis: 300px;
+    }
+
+    #indhold .col_1 {
+        width: 100%;
+        margin-top: 15rem;
+        margin-right: 15rem;
+        flex-basis: 300px;
+    }
+
+    .video {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding: 5rem;
+    }
+
+    h3.center {
+        line-height: 3.5;
+    }
+
+    #ux .overskrift {
+        margin-left: 20rem;
+        margin-right: 20rem;
+        margin-top: 0;
+        position: absolute;
+        flex-basis: 700px;
+        flex-grow: 1;
+    }
+
+    #ux .col_img {
+        width: 100%;
+        margin-right: 1rem;
+        margin-top: 18rem;
+
+    }
+
+    #ux .col {
+        width: 100%;
+        margin-left: 5rem;
+        margin-top: 15rem;
+    }
+
+
+}
