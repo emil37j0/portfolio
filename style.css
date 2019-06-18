@@ -15,7 +15,7 @@ body {
 
 section,
 footer {
-    /*    max-width: 1200px;*/
+    /*        max-width: 1200px;*/
     margin: 0 auto;
 }
 
@@ -203,10 +203,8 @@ header nav a {
 #portfolio .tema {
     width: 90%;
     position: relative;
-    margin: 0.8rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     transition: 0.5s;
+    overflow: visible;
 }
 
 #portfolio .tema:hover {
@@ -253,6 +251,7 @@ header nav a {
     flex-basis: 300px;
     margin: 0.2rem;
     padding: 1rem;
+    overflow: visible;
 }
 
 #web .col {
@@ -272,6 +271,7 @@ header nav a {
     position: relative;
     transition: 0.5s;
     margin: 0.8rem;
+    overflow: visible;
 }
 
 #web .tekst {
@@ -289,7 +289,6 @@ header nav a {
     opacity: 1;
 
 }
-
 
 /***WEB SLUT***/
 
@@ -330,6 +329,7 @@ header nav a {
     position: relative;
     transition: 0.5s;
     margin: 0.8rem;
+    overflow: visible;
 }
 
 #indhold .tekst {
@@ -345,6 +345,7 @@ header nav a {
     background-color: #332144;
     text-align: center;
     opacity: 1;
+
 
 }
 
@@ -379,6 +380,10 @@ h3.center {
 
 }
 
+#ux .overskrift {
+    margin-top: 2rem;
+}
+
 #ux .col_img {
     flex-grow: 1;
     flex-basis: 300px;
@@ -403,6 +408,7 @@ h3.center {
     position: relative;
     transition: 0.5s;
     margin: 0.8rem;
+    overflow: visible;
 }
 
 #ux .tekst {
@@ -420,7 +426,6 @@ h3.center {
     opacity: 1;
 
 }
-
 
 /***UX SLUT***/
 
